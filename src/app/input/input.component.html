@@ -1,0 +1,16 @@
+<nav class="navbar navbar bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=" ">Addition</a>
+        </div>
+
+    </div>
+</nav>
+
+<h1>{{title}}</h1>
+<div class="container">
+    <input type="text" class="form-control" placeholder="Enter first number" [(ngModel)]="parta"> <br/>
+    <input type="text" class="form-control" placeholder="Enter Second number" [(ngModel)]="partb">
+</div>
+
+<app-output [a]="parta" [b]="partb" [child]="name"></app-output>

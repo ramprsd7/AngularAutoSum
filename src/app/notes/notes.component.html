@@ -1,0 +1,22 @@
+<div style="text-align:center;">
+    <h2>Notes Components</h2>
+    <div class="container">
+        <input class="form-control" [(ngModel)]="titleModel" placeholder="Title" required>
+        <br>
+
+        <input class="form-control" [(ngModel)]="contentModel" placeholder="Enter your content">
+        <br>
+
+    </div>
+
+    <br>
+
+    <button type="button" class="btn btn-primary" (click)="createQuicknotes()">Add Note</button>
+
+    <hr>
+
+    <p *ngFor="let i of quicknotes">
+        <mat-card-title> {{ i.title }} </mat-card-title>
+        <mat-card> {{ i.content }} </mat-card>
+
+</div>
